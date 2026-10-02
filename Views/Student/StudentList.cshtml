@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Student List";
+}
+@using MVC_Project.Models
+@model List<StudentModel>
+<div>
+    <h1 class="text-center display-4">Student List</h1>
+    @{
+        foreach (StudentModel student in Model)
+        {
+            <ul>
+                <h3>@student.id</h3>
+                <li>@student.firstName</li>
+                <li>@student.lastName</li>
+                <li>@student.address</li>
+                <li>@student.contactNum</li>
+                <li>@student.dateOfBirth</li>
+            </ul>
+        }
+    }
+</div>
