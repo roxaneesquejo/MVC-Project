@@ -8,52 +8,57 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVC_Project
 build_property.RootNamespace = MVC_Project
-build_property.ProjectDir = /home/ize/Documents/git/MVC-Project/
+build_property.ProjectDir = /Users/izeaharquillano/Documents/git/MVC-Project/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.RazorLangVersion = 9.0
+build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/ize/Documents/git/MVC-Project
+build_property.MSBuildProjectDirectory = /Users/izeaharquillano/Documents/git/MVC-Project
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/ize/Documents/git/MVC-Project/Views/Home/Index.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Home/AboutIzeah.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dEl6ZWFoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/Home/Privacy.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/Shared/Error.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/Student/Index.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/Student/StudentList.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Student/StudentList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9TdHVkZW50TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/_ViewImports.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/_ViewStart.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ize/Documents/git/MVC-Project/Views/Shared/_Layout.cshtml]
+[/Users/izeaharquillano/Documents/git/MVC-Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-97bp15y0ep
