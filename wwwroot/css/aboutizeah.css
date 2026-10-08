@@ -1,4 +1,4 @@
-/* layout css overrides */
+/* layout css bootstrap overrides */
 header nav.navbar {
     background-color: #282828 !important;
     margin-bottom: 0 !important;
@@ -6,28 +6,45 @@ header nav.navbar {
     box-shadow: none !important;
 }
 header nav.navbar a {
-    color: #fbf1c7 !important;
+    color: #d5c4a1 !important;
 }
 footer.footer {
     background-color: #282828;
-    color: #fbf1c7 !important;
+    color: #d5c4a1 !important;
     border-top: none !important;
     box-shadow: none !important;
+}
+footer.footer a {
+  color: #fabd2f !important;
+}
+footer.footer a:hover {
+  color: #d79921 !important;
+}
+
+/* non overrides */
+body,
+header nav.navbar,
+footer.footer,
+.about-izeah {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 body {
   background-color: #3c3836;
 }
-
 .about-izeah {
     background-color: #3c3836;
 }
-
 .about-izeah h1 {
-    color: #258cfb;
+    color: #98971a;
     margin-bottom: 1rem;
 }
-
+.about-izeah a {
+  color: #fabd2f;
+}
+.about-izeah a:hover {
+    color: #d79921;
+}
 .about-izeah p {
     color: #fbf1c7;
     font-size: 1.1rem;
