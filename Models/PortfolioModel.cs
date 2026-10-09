@@ -37,22 +37,26 @@ public class PortfolioModel
     
     // Background and Experience
     public string? bio { get; set; }  
-    public List<string>? techStack { get; set; }
+    public List<Technologies>? TechStack { get; set; }
     public List<Experience>? Experiences { get; set; }
     public List<Project>? Projects { get; set; }
 }
 
+public class Technologies {
+    public string? category { get; set; }
+    public List<string>? technology { get; set; }
+}
 public class Experience {
-        public string? company { get; set; }
-        public string? position { get; set; }
-        public string? startDate { get; set; }
-        public string? endDate { get; set; }
-        public string? description { get; set; }
-    }
+    public string? company { get; set; }
+    public string? position { get; set; }
+    public string? startDate { get; set; }
+    public string? endDate { get; set; }
+    public string? description { get; set; }
+}
 
-    public class Project {
-        public string? name { get; set; }
-        public List<string>? tools { get; set; }
-        public string? description { get; set; }
-        public string? projectLink {get; set; }
-    }
+public class Project {
+    public string? name { get; set; }
+    public List<string>? tools { get; set; }
+    public string? description { get; set; }
+    public string? projectLink {get; set; }
+}

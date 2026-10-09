@@ -30,7 +30,32 @@ public class PortfolioController : Controller
             linkedinLink = "https://ph.linkedin.com/in/roxaneesquejo",
 
             bio = "I am currently a 3rd year Computer Science Student at the Polytechnic University of the Philippines. I enjoy building web applications and interactive games.",
-            techStack = ["C", "Java", "TypeScript", "SQL", "HTML/CSS"],
+            TechStack = new List<Technologies>
+            {
+                new Technologies
+                {
+                    category = "Programming",
+                    technology = ["C", "Java", "TypeScript", "SQL", "HTML/CSS"],      
+                },
+
+                new Technologies
+                {
+                    category = "Frameworks & Libraries",
+                    technology = ["React", "Next.js", "Node.js", "Flutter"],
+                },
+
+                new Technologies
+                {
+                    category = "Databases & Deployment",
+                    technology = ["PostgreSQL", "Supabase", "Vercel"],
+                },
+
+                new Technologies
+                {
+                    category = "Tools",
+                    technology = ["Git", "GitHub", "Docker Compose", "Android Studio", "VS Code", "Antigravity"],
+                }
+            },
 
             Experiences = new List<Experience>
             {
