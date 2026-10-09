@@ -1,0 +1,23 @@
+header nav.navbar {
+    background-color: #282828 !important;
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+header nav.navbar, footer.footer {
+    font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+}
+header nav.navbar a { color: #d5c4a1 !important; }
+footer.footer {
+    background-color: #282828;
+    color: #d5c4a1 !important;
+    border-top: none !important;
+}
+footer.footer a { color: #fabd2f !important; }
+footer.footer a:hover { color: #d79921 !important; }
+
+body {
+    background-color: #3c3836;
+    font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+}
+

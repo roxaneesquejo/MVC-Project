@@ -11,4 +11,9 @@ public class PortfolioController : Controller
     {
         return View();
     }
+
+    public IActionResult IzeahPortfolio()
+    {
+        return View();
+    }
 }

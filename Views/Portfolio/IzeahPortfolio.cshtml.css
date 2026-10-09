@@ -1,24 +1,8 @@
-body, header nav.navbar, footer.footer, .about-izeah {
+.about-izeah {
     font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
 }
 
-body, .about-izeah { background-color: #3c3836; }
-
-header nav.navbar {
-    background-color: #282828 !important;
-    margin-bottom: 0 !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
-}
-header nav.navbar a { color: #d5c4a1 !important; }
-
-footer.footer {
-    background-color: #282828;
-    color: #d5c4a1 !important;
-    border-top: none !important;
-}
-footer.footer a { color: #fabd2f !important; }
-footer.footer a:hover { color: #d79921 !important; }
+.about-izeah { background-color: #3c3836; }
 
 .about-izeah { color: #ebdbb2; max-width: 960px; }
 .about-izeah h1 { color: #fbf1c7; }
