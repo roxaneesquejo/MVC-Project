@@ -41,6 +41,7 @@ public class PortfolioController : Controller
                     company = "PUP Association of Students for Computer Intelligence Integration",
                     position = "Vice President for Research and Extensions",		
                     startDate = "August 2026",
+                    endDate = "Present",
                     description = "PUP-ASCII is the official academic organization of PUP Department of Computer Science. I head the Research and Extensions Committee, managing both partnerships and writing aspect of the organization."
                 },
 
@@ -49,6 +50,7 @@ public class PortfolioController : Controller
                     company = "ARK Studio",
                     position = "Game Development - Audio Design Lead",
                     startDate = "August 2025",
+                    endDate = "Present",
                     description = "ARK Studio is a student-led organization dedicated to Game Development. I lead audio design initiatives within the game development team, collaborating with developers and designers to support gameplay and production."
                 },
 
