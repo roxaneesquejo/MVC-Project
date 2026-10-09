@@ -4,6 +4,13 @@
 @using MVC_Project.Models
 @model PortfolioModel
 
+<nav id ="portfolio-navbar" class="hidden-navbar">
+    <a href="#about-section">About</a>
+    <a href="#experience-section">Experience</a>
+    <a href="#project-section">Projects</a>
+    <a href="#contact-section">Contact</a>
+</nav>
+
 <div class = "portfolio-container">
     <div class = "personal-details light-container">
         <h1>@Model.firstName @Model.middleName @Model.lastName</h1>
@@ -35,9 +42,7 @@
         </div>
     </div>
 
-    
-
-    <div class = "experience-container light-container">
+    <div id ="experience-section" class = "experience-container light-container">
         <h1>Experience</h1>
         @foreach (Experience experience in Model.Experiences)
         {   
@@ -49,7 +54,7 @@
         }
     </div>
 
-    <div class = "project-container dark-container">
+    <div id = "project-section" class = "project-container dark-container">
         <h1>Highlighted Projects</h1>
 
         <div class = "projects-grid">
@@ -90,7 +95,7 @@
            </div>
     </div>
 
-     <div class = "contact-container dark-container">
+     <div id = "contact-section" class = "contact-container dark-container">
         <h1>Get In Touch</h1>            
         <p>Reach out to me through the following:</p>
 

@@ -1,3 +1,20 @@
+
+.hidden-navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 12px 20px;
+}
+
+.hidden-navbar a {
+    color: pink;
+    background: transparent;
+    border: none;
+    padding: 6px 16px;
+}
+
 .portfolio-container {
     display: flex;
     flex-direction: column;
@@ -109,7 +126,7 @@ h1 {
 .experience-container, .project-container {
     width: 100%;
     box-sizing: border-box;
-    padding: 50px 50px;
+    padding: 75px 40px;
 }
 
 .experience-container h1, .project-container h1, .techstack-container h1 {
