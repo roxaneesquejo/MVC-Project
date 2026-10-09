@@ -686,7 +686,7 @@ var i,
 	pseudos = ":(" + identifier + ")(?:\\((" +
 
 		// To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:
-		// 1. quoted (capture 3; capture 4 or capture 5)
+		// 1. biod (capture 3; capture 4 or capture 5)
 		"('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|" +
 
 		// 2. simple (capture 6)
@@ -1552,7 +1552,7 @@ Expr = jQuery.expr = {
 		ATTR: function( match ) {
 			match[ 1 ] = match[ 1 ].replace( runescape, funescape );
 
-			// Move the given value to match[3] whether quoted or unquoted
+			// Move the given value to match[3] whether biod or unbiod
 			match[ 3 ] = ( match[ 3 ] || match[ 4 ] || match[ 5 ] || "" )
 				.replace( runescape, funescape );
 
@@ -1602,28 +1602,28 @@ Expr = jQuery.expr = {
 
 		PSEUDO: function( match ) {
 			var excess,
-				unquoted = !match[ 6 ] && match[ 2 ];
+				unbiod = !match[ 6 ] && match[ 2 ];
 
 			if ( matchExpr.CHILD.test( match[ 0 ] ) ) {
 				return null;
 			}
 
-			// Accept quoted arguments as-is
+			// Accept biod arguments as-is
 			if ( match[ 3 ] ) {
 				match[ 2 ] = match[ 4 ] || match[ 5 ] || "";
 
-			// Strip excess characters from unquoted arguments
-			} else if ( unquoted && rpseudo.test( unquoted ) &&
+			// Strip excess characters from unbiod arguments
+			} else if ( unbiod && rpseudo.test( unbiod ) &&
 
 				// Get excess from tokenize (recursively)
-				( excess = tokenize( unquoted, true ) ) &&
+				( excess = tokenize( unbiod, true ) ) &&
 
 				// advance to the next closing parenthesis
-				( excess = unquoted.indexOf( ")", unquoted.length - excess ) - unquoted.length ) ) {
+				( excess = unbiod.indexOf( ")", unbiod.length - excess ) - unbiod.length ) ) {
 
 				// excess is a negative index
 				match[ 0 ] = match[ 0 ].slice( 0, excess );
-				match[ 2 ] = unquoted.slice( 0, excess );
+				match[ 2 ] = unbiod.slice( 0, excess );
 			}
 
 			// Return only captures needed by the pseudo filter method (type and argument)

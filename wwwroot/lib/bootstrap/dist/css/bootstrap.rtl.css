@@ -313,7 +313,7 @@ dd {
   margin-right: 0;
 }
 
-blockquote {
+blockbio {
   margin: 0 0 1rem;
 }
 
@@ -686,21 +686,21 @@ progress {
   text-transform: uppercase;
 }
 
-.blockquote {
+.blockbio {
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
-.blockquote > :last-child {
+.blockbio > :last-child {
   margin-bottom: 0;
 }
 
-.blockquote-footer {
+.blockbio-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
   color: #6c757d;
 }
-.blockquote-footer::before {
+.blockbio-footer::before {
   content: "— ";
 }
 

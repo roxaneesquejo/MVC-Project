@@ -5,35 +5,56 @@
 @model PortfolioModel
 
 <div class = "portfolio-container">
-    <div class = "personal-info-container">
+    <div class = "personal-details light-container">
+        <h1>@Model.firstName @Model.middleName @Model.lastName</h1>
+            <p>For there is magic in programming.</p>
+            
+
+        <div class = "social-links">
+            <a href="@Model.githubLink">Github</a>    
+            <a href="@Model.linkedinLink">Linkedin</a> 
+            <a href="mailto:@Model.emailAddress">Email</a>   
+        </div>
+    </div>
+
+    <div class = "about-me-container dark-container">
+
         <img src="@Url.Content(Model.photoLink)" alt="Roxane Graduation Picture" id="rox-grad-pic">
-        
-        <div class = "personal-details">
-            <h1>@Model.firstName @Model.middleName @Model.lastName</h1>
+        <div class = "about-card">
+            <h1>About Me</h1>
             <p>@Model.bio</p>
-            <div class = "social-links">
-                <a href="@Model.githubLink">Github</a>    
-                <a href="@Model.linkedinLink">Linkedin</a> 
-                <a href="mailto:@Model.emailAddress">Email</a>   
+            <div class = "about-subheading">
+                <div class = "based-subheading">
+                    <span class = "title">Based in</span>
+                    <span>@Model.location</span>
+                </div>
+                <div class = "based-subheading">
+                    <span class = "title">Status</span>
+                    <span>@Model.status</span>
+                </div>
+                
             </div>
         </div>
+        
+        @* <div class = "technologies-container">
+            <h1>Technologies</h1>
+
+                @foreach (Technologies tech in Model.TechStack)
+                {
+                    <div class = "tools-container">
+                        <h5>@tech.category</h5>
+                        <p>
+                            @foreach (String technology in @tech.tool)
+                            {
+                                @technology @:
+                            }
+                        </p>
+                    </div>
+                }
+        </div> *@
     </div>
 
-    <div class = "education-container light-container">
-        <h1>Education</h1>
-        <div class = "undergraduate-studies">
-            <h5>@Model.university</h5>
-            <p>@Model.yearLevel Year @Model.degree Student</p>
-        </div>
-    </div>
-
-    <div class = "techstack-container dark-container">
-        <h1>Tech Stack</h1>
-        @foreach (String tech in Model.techStack)
-        {
-            @tech @:
-        }
-    </div>
+    
 
     <div class = "experience-container light-container">
         <h1>Experience</h1>
@@ -41,9 +62,7 @@
         {   
             <div class = "experience-card">
                 <h5>@experience.company</h5>
-                <p>@experience.position</p>
-                <p>@experience.startDate</p>
-                <p>@experience.endDate</p>
+                <p>@experience.position | @experience.startDate - @experience.endDate</p>
                 <p>@experience.description</p>
             </div>
         }
@@ -51,21 +70,25 @@
 
     <div class = "project-container dark-container">
         <h1>Projects</h1>
-        @foreach (Project project in Model.Projects)
-        {
-            <div class = "project-card">
-                <h5>@project.name</h5>
-                
-                @foreach (String tool in project.tools)
-                {
-                    @tool @:
-                }
 
-                <p>@project.description</p>
-                <a href = "@project.projectLink">Link</a>
-            </div>
+        <div class = "projects-grid">
+            @foreach (Project project in Model.Projects)
+            {
+                <div class = "project-card">
+                    <h4>@project.name</h4>
+                    
+                    <div class="tool-container">
+                        @foreach (String tool in project.tools)
+                        {
+                            <span class="tool-indiv">@tool</span>
+                        }
+                    </div>
 
-        }
+                    <p>@project.description</p>
+                    <a href = "@project.projectLink">Link</a>
+                </div>
+            }
+        </div>
     </div>
 
 </div>
