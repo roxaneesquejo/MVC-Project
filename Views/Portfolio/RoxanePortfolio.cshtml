@@ -8,16 +8,14 @@
     <div class = "personal-details light-container">
         <h1>@Model.firstName @Model.middleName @Model.lastName</h1>
             <p>For there is magic in programming.</p>
-            
 
-        <div class = "social-links">
-            <a href="@Model.githubLink">Github</a>    
-            <a href="@Model.linkedinLink">Linkedin</a> 
-            <a href="mailto:@Model.emailAddress">Email</a>   
+        <div class = "button-links">
+            <a href="#about-section">Explore Profile</a>    
+            <a href="@Url.Content(Model.resumeLink)" download>Download Resume</a>   
         </div>
     </div>
 
-    <div class = "about-me-container dark-container">
+    <div id = "about-section" class = "about-me-container dark-container">
 
         <img src="@Url.Content(Model.photoLink)" alt="Roxane Graduation Picture" id="rox-grad-pic">
         <div class = "about-card">
@@ -35,23 +33,6 @@
                 
             </div>
         </div>
-        
-        @* <div class = "technologies-container">
-            <h1>Technologies</h1>
-
-                @foreach (Technologies tech in Model.TechStack)
-                {
-                    <div class = "tools-container">
-                        <h5>@tech.category</h5>
-                        <p>
-                            @foreach (String technology in @tech.tool)
-                            {
-                                @technology @:
-                            }
-                        </p>
-                    </div>
-                }
-        </div> *@
     </div>
 
     
@@ -61,7 +42,7 @@
         @foreach (Experience experience in Model.Experiences)
         {   
             <div class = "experience-card">
-                <h5>@experience.company</h5>
+                <h4>@experience.company</h4>
                 <p>@experience.position | @experience.startDate - @experience.endDate</p>
                 <p>@experience.description</p>
             </div>
@@ -69,7 +50,7 @@
     </div>
 
     <div class = "project-container dark-container">
-        <h1>Projects</h1>
+        <h1>Highlighted Projects</h1>
 
         <div class = "projects-grid">
             @foreach (Project project in Model.Projects)
@@ -88,6 +69,35 @@
                     <a href = "@project.projectLink">Link</a>
                 </div>
             }
+        </div>
+    </div>
+
+    <div class = "techstack-container light-container">
+        <h1>Technical Skills</h1>
+           <div class = "tech-grid">
+                @foreach (Technologies tech in Model.TechStack)
+                {
+                <div class = "tech-card">
+                    <h5>@tech.category</h5>
+                    <div class = "tool-container">
+                        @foreach (String technology in @tech.tool)
+                        {
+                            <span class = "tech-indiv">@technology</span>
+                        }
+                    </div>
+                </div>
+                }
+           </div>
+    </div>
+
+     <div class = "contact-container dark-container">
+        <h1>Get In Touch</h1>            
+        <p>Reach out to me through the following:</p>
+
+        <div class = "button-links">
+            <a href="@Model.githubLink">Github</a>    
+            <a href="@Model.linkedinLink">Linkedin</a> 
+            <a href="mailto:@Model.emailAddress">Email</a>   
         </div>
     </div>
 

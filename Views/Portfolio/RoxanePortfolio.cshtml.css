@@ -4,7 +4,7 @@
 }
 
 .light-container {
-    background-color: pink;
+    background: radial-gradient(circle at 50% 50%,#ffe4e6 0%, #fbcfe8 50%, #f4a2b9 100%);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 }
 
 .dark-container {
-    background-color: black;
+    background: black;
     padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     align-items: center;
 }
 
-.social-links {
+.button-links {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,38 +109,44 @@ h1 {
 .experience-container, .project-container {
     width: 100%;
     box-sizing: border-box;
-    padding: 40px 20px;
+    padding: 50px 50px;
 }
 
-.experience-container h1, .project-container h1 {
+.experience-container h1, .project-container h1, .techstack-container h1 {
     padding-bottom: 20px;
 }
+
 .experience-card {
-    text-align: left;
+    text-align: justify;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     max-width: 80%;
-    margin: 0 auto 20px auto;
+    margin: 30px auto 20px auto;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 20px;
     width: 100%;
 }
 
 .project-card {
-    background-color: pink;
-    color: black;
+    background-color: black;
+    color: white;
+    border: 2px solid pink;
     border-radius: 16px;
     padding: 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    gap: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    gap: 15px;
+}
+
+.project-card h4 {
+    color: pink;
 }
 
 .tool-container {
@@ -153,7 +159,36 @@ h1 {
 
 .tool-indiv {
     font-size: 15px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+.techstack-container {
+    padding: 60px 20px;
+}
+    
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.tech-card {
+    border-radius: 20px;
+    padding: 24px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-indiv {
+    font-size: 15px;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 4px 10px; 
+    padding: 4px 10px;
+}
+
+.contact-container {
+    height: 350px;
 }
