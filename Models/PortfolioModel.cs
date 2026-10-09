@@ -27,7 +27,6 @@ public class PortfolioModel
     public string? middleName { get; set; }
     public string? lastName { get; set; }
     public string? photoLink { get; set; }
-    public string? bio { get; set; }
 
     // Contact Information
     public string? emailAddress { get; set; }
@@ -37,10 +36,7 @@ public class PortfolioModel
     public string? linkedinLink { get; set; }
     
     // Background and Experience
-    public string? degree { get; set; }
-    public string? yearLevel { get; set; }
-    public string? university { get; set; }
-    
+    public string? bio { get; set; }  
     public List<string>? techStack { get; set; }
     public List<Experience>? Experiences { get; set; }
     public List<Project>? Projects { get; set; }
