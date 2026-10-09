@@ -35,25 +35,25 @@ public class PortfolioController : Controller
                 new Technologies
                 {
                     category = "Programming",
-                    technology = ["C", "Java", "TypeScript", "SQL", "HTML/CSS"],      
+                    tool = ["C", "Java", "TypeScript", "SQL", "HTML/CSS"],      
                 },
 
                 new Technologies
                 {
                     category = "Frameworks & Libraries",
-                    technology = ["React", "Next.js", "Node.js", "Flutter"],
+                    tool = ["React", "Next.js", "Node.js", "Flutter"],
                 },
 
                 new Technologies
                 {
                     category = "Databases & Deployment",
-                    technology = ["PostgreSQL", "Supabase", "Vercel"],
+                    tool = ["PostgreSQL", "Supabase", "Vercel"],
                 },
 
                 new Technologies
                 {
                     category = "Tools",
-                    technology = ["Git", "GitHub", "Docker Compose", "Android Studio", "VS Code", "Antigravity"],
+                    tool = ["Git", "GitHub", "Docker Compose", "Android Studio", "VS Code", "Antigravity"],
                 }
             },
 

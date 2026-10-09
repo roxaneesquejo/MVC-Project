@@ -44,7 +44,7 @@ public class PortfolioModel
 
 public class Technologies {
     public string? category { get; set; }
-    public List<string>? technology { get; set; }
+    public List<string>? tool { get; set; }
 }
 public class Experience {
     public string? company { get; set; }
