@@ -22,6 +22,7 @@ public class PortfolioController : Controller
             middleName = "Donor",
             lastName = "Esquejo",
             photoLink = "~/images/ESQUEJO_BG.png",
+            resumeLink = "~/ESQUEJO_RESUME.pdf",
             location = "Manila, Philippines",
             status = "Balancing my workload",
 
@@ -55,7 +56,7 @@ public class PortfolioController : Controller
                 new Technologies
                 {
                     category = "Tools",
-                    tool = ["Git", "GitHub", "Docker Compose", "Android Studio", "VS Code", "Antigravity"],
+                    tool = ["Git", "GitHub", "Docker Compose", "VS Code", "Antigravity"],
                 }
             },
 
