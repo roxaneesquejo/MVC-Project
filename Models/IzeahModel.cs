@@ -8,6 +8,6 @@ public class IzeahModel
 {
     public List<string>? Interests  { get; set; }
     public List<TechDomain>? TechStack { get; set; }
-    public List<Project>? IzeahProjects { get; set; }
-    public List<Experience>? IzeahExperiences { get; set; }
+    public List<Project>? Projects { get; set; }
+    public List<Experience>? Experiences { get; set; }
 }

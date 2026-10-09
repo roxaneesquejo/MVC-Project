@@ -21,7 +21,7 @@ public class PortfolioController : Controller
                 new("languages", ["C/C++", "Python", "Java"]),
                 new("tools & data", ["PostgreSQL", "Supabase", "Git", "Linux", "Docker", "Vim/Neovim", "CI/CD"]),
             ],
-            IzeahProjects =
+            Projects =
             [
                 new("Aya",
                     "An app that helps answer the question \"saan tayo?\" using group preference-based matching algorithms.",
@@ -33,7 +33,7 @@ public class PortfolioController : Controller
                     "An offline-first lagoon food database with a live interactive map utilizing b-tree lookups for its database engine",
                     "https://github.com/izeaharquillano/pup-lagoon-app"),
             ],
-            IzeahExperiences =
+            Experiences =
             [
                 new("1st Runner-Up", "DOST START Hackathon", "Built and presented Starship as a backend developer"),
                 new("6th Place", "SIKAPTala DLSU Hackathon", "Presented and contributed to Aya"),
