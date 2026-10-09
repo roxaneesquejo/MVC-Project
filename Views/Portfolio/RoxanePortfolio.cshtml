@@ -5,8 +5,16 @@
 @model PortfolioModel
 
 <div class = "personal-info-container">
-    <div>
-        <img src="@Url.Content(Model.photoLink)" alt="Roxane Graduation Picture" id="rox-grad-pic">
-        <h1>@Model.firstName</h1>
+    <img src="@Url.Content(Model.photoLink)" alt="Roxane Graduation Picture" id="rox-grad-pic">
+    
+    <div class = "personal-details">
+        <h1>@Model.firstName @Model.middleName @Model.lastName</h1>
+        <p>@Model.bio</p>
+        <div class = "social-links">
+            <a href="@Model.githubLink">Github</a>    
+            <a href="@Model.linkedinLink">Linkedin</a> 
+            <a href="mailto:@Model.emailAddress">Email</a>   
+        </div>
     </div>
+
 </div>
