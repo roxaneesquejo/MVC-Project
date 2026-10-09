@@ -17,6 +17,7 @@ public class PortfolioController : Controller
        PortfolioModel RoxanePortfolio = new PortfolioModel()
        {
             id = 1,
+
             firstName = "Roxane K-Anne",
             middleName = "Donor",
             lastName = "Esquejo",
@@ -32,8 +33,8 @@ public class PortfolioController : Controller
             degree = "Bachelor of Science in Computer Science",
             yearLevel = "3rd",
             university = "Polytechnic University of the Philippines",
-
             techStack = ["C", "Java", "TypeScript", "SQL", "HTML/CSS"],
+            
             Experiences = new List<Experience>
             {
                 new Experience
