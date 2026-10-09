@@ -26,12 +26,15 @@ public class PortfolioModel
     public required string firstName { get; set; }
     public string? middleName { get; set; }
     public string? lastName { get; set; }
+    public string? photoLink { get; set; }
     public string? bio { get; set; }
 
     // Contact Information
     public string? emailAddress { get; set; }
     public string? githubUsername { get; set; }
+    public string? githubLink { get; set; }
     public string? linkedinUsername { get; set; }
+    public string? linkedinLink { get; set; }
     
     // Background and Experience
     public string? degree { get; set; }

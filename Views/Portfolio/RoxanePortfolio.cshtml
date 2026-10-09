@@ -1,9 +1,12 @@
 @{
-    ViewData["Title"] = "About Roxane K-Anne Esquejo";
+    ViewData["Title"] = "About Roxane";
 }
 @using MVC_Project.Models
 @model PortfolioModel
 
-<div>
-    <h1>@Model.firstName</h1>
+<div class = "personal-info-container">
+    <div>
+        <img src="@Url.Content(Model.photoLink)" alt="Roxane Graduation Picture" id="rox-grad-pic">
+        <h1>@Model.firstName</h1>
+    </div>
 </div>

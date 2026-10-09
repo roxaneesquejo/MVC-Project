@@ -20,11 +20,14 @@ public class PortfolioController : Controller
             firstName = "Roxane K-Anne",
             middleName = "Donor",
             lastName = "Esquejo",
+            photoLink = "~/images/ESQUEJO_BG.png",
             bio = "wala pa",
 
             emailAddress = "roxanek.esquejo@gmail.com",
             githubUsername = "roxaneesquejo",
+            githubLink = "https://github.com/roxaneesquejo/",
             linkedinUsername = "roxaneesquejo",
+            linkedinLink = "https://ph.linkedin.com/in/roxaneesquejo",
 
             degree = "Bachelor of Science in Computer Science",
             yearLevel = "3rd year",

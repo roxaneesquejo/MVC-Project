@@ -1,0 +1,9 @@
+.personal-info-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#rox-grad-pic {
+    max-width: 384px;
+    max-height: 376px;
+}
