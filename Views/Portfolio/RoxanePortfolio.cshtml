@@ -28,6 +28,14 @@
     </div>
 
     <div class = "techstack-container">
+        <h1>Tech Stack</h1>
+        @foreach (String tech in Model.techStack)
+        {
+            @tech @:
+        }
+    </div>
+
+    <div class = "experience-container">
         @foreach (Experience experience in Model.Experiences)
         {   
             <div class = "experience-card">
