@@ -30,7 +30,7 @@ public class PortfolioController : Controller
             linkedinLink = "https://ph.linkedin.com/in/roxaneesquejo",
 
             degree = "Bachelor of Science in Computer Science",
-            yearLevel = "3rd year",
+            yearLevel = "3rd",
             university = "Polytechnic University of the Philippines",
 
             techStack = ["C", "Java", "TypeScript", "SQL", "HTML/CSS"],
@@ -40,7 +40,7 @@ public class PortfolioController : Controller
                 {
                     company = "PUP Association of Students for Computer Intelligence Integration",
                     position = "Vice President for Research and Extensions",		
-                    startDate = new DateOnly(2026, 08, 10),
+                    startDate = "August 2026",
                     description = "PUP-ASCII is the official academic organization of PUP Department of Computer Science. I head the Research and Extensions Committee, managing both partnerships and writing aspect of the organization."
                 },
 
@@ -48,7 +48,7 @@ public class PortfolioController : Controller
                 {
                     company = "ARK Studio",
                     position = "Game Development - Audio Design Lead",
-                    startDate = new DateOnly(2025, 08, 25),
+                    startDate = "August 2025",
                     description = "ARK Studio is a student-led organization dedicated to Game Development. I lead audio design initiatives within the game development team, collaborating with developers and designers to support gameplay and production."
                 },
 
@@ -56,8 +56,8 @@ public class PortfolioController : Controller
                 {
                     company = "PUP College of Computer and Information Sciences",
                     position = "Immersionist",
-                    startDate = new DateOnly(2024, 02, 12),
-                    endDate = new DateOnly(2024, 05, 23),
+                    startDate = "February 2024",
+                    endDate = "May 2024",
                     description = "Inside the CCIS Faculty, I helped organize  departmental records, maintaining secure filing systems and routing critical documents across university offices in accordance with institutional records-management procedures."
                 }
             },
