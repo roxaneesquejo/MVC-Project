@@ -22,7 +22,6 @@ public class PortfolioController : Controller
             middleName = "Donor",
             lastName = "Esquejo",
             photoLink = "~/images/ESQUEJO_BG.png",
-            bio = "Games. Web Applications. Audios. That's where I excel at these days.",
 
             emailAddress = "roxanek.esquejo@gmail.com",
             githubUsername = "roxaneesquejo",
@@ -30,11 +29,9 @@ public class PortfolioController : Controller
             linkedinUsername = "roxaneesquejo",
             linkedinLink = "https://ph.linkedin.com/in/roxaneesquejo",
 
-            degree = "Bachelor of Science in Computer Science",
-            yearLevel = "3rd",
-            university = "Polytechnic University of the Philippines",
+            bio = "I am currently a 3rd year Computer Science Student at the Polytechnic University of the Philippines. I enjoy building web applications and interactive games.",
             techStack = ["C", "Java", "TypeScript", "SQL", "HTML/CSS"],
-            
+
             Experiences = new List<Experience>
             {
                 new Experience
