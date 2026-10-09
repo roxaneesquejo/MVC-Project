@@ -12,11 +12,10 @@ public class PortfolioController : Controller
         return View();
     }
 
-    public IActionResult StudentList()
+    public IActionResult RoxanePortfolio()
     {
-        List<PortfolioModel> studentList = new List<PortfolioModel>();
-        studentList.Add(new PortfolioModel
-        {
+       PortfolioModel RoxanePortfolio = new PortfolioModel()
+       {
             id = 1,
             firstName = "Roxane K-Anne",
             middleName = "Donor",
@@ -69,9 +68,9 @@ public class PortfolioController : Controller
                     description = "EcoEcho is a gamefied platform dedicated to encouraging sustainable practices for its users.",
                     projectLink = "https://github.com/EcoEcho-DAA/EcoEcho"
                 }  
-            }
-        });
+            },
+        };
      
-        return View(studentList);
+        return View(RoxanePortfolio);
     }
 }
