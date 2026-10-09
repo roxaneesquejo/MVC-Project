@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "About Izeah";
 }
+@model MVC_Project.Models.IzeahModel
 
 @section Styles {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +29,7 @@
                 <p>I'm Izeah an aspiring software dev from PUP Manila. I'm currently interested in building apps, webapps, game development, reproducible systems, and self-hosting servers</p>
                 <ul class="list-unstyled mb-0 small">
                     <li><span class="about-dim">location:</span> Quezon City, Philippines</li>
-                    <li><span class="about-dim">interests:</span> android apps, web apps, linux, nix, proxmox, docker, godot</li>
+                    <li><span class="about-dim">interests:</span> @string.Join(", ", Model.Interests?? [])</li>
                 </ul>
             </div>
         </div>
