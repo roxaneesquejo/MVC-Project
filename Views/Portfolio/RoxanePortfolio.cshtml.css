@@ -1,13 +1,26 @@
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .personal-info-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: pink;
+    background-color: black;
 }
 .personal-details {
     display: flex;
     flex-direction: column;
+}
+
+.personal-details h1 {
+    color: pink;
+}
+
+.personal-details p {
+    color: white;
 }
 
 .social-links {
@@ -22,4 +35,8 @@
     width: auto;
     height: auto;
     flex-shrink: 0;
+}
+
+.education-container {
+    background-color: pink;
 }
