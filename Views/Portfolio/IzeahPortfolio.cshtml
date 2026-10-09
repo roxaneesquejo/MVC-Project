@@ -53,42 +53,29 @@
     <section id="projects" class="mt-5">
         <h3 class="about-dim">~/featured-projects</h3>
         <div class="row g-3">
-            <div class="col-md-4">
-                <div class="about-card h-100">
-                    <h4>Aya</h4>
-                    <p class="small">An app that helps answer the question "saan tayo?" using group preference-based matching algorithms.</p>
-                    <a href="https://github.com/afkDen/iNet_GitHub">github →</a>
+            @foreach (var project in Model.Projects?? [])
+            {
+                <div class="col-md-4">
+                    <div class="about-card h-100">
+                        <h4>@project.Name</h4>
+                        <p class="small">@project.Desc</p>
+                        <a href="@project.Link">github →</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="about-card h-100">
-                    <h4>Starship</h4>
-                    <p class="small">A system that aims to solve the fractured data problem of rural schools using sms-based data collection</p>
-                    <a href="https://github.com/star-ship-project/starship-web">github →</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="about-card h-100">
-                    <h4>PUPili</h4>
-                    <p class="small">An offline-first lagoon food database with a live interactive map utilizing b-tree lookups for its database engine</p>
-                    <a href="https://github.com/izeaharquillano/pup-lagoon-app">github →</a>
-                </div>
-            </div>
+            }
         </div>
     </section>
 
     <section class="mt-5">
         <h3 class="about-dim">~/experience.log</h3>
-        <div class="about-item">
-            <small class="about-dim">1st Runner-Up</small>
-            <h4>DOST START Hackathon</h4>
-            <p class="small mb-0">Built and presented Starship as a backend developer</p>
-        </div>
-        <div class="about-item mt-3">
-            <small class="about-dim">6th Place</small>
-            <h4>SIKAPTala DLSU Hackathon</h4>
-            <p class="small mb-0">Built and contributed to Aya</p>
-        </div>
+        @foreach (var experience in Model.Experiences?? [])
+        {
+            <div class="about-item mb-3">
+                <small class="about-dim">@experience.Placement</small>
+                <h4>@experience.Name</h4>
+                <p class="small mb-0">@experience.Desc</p>
+            </div>
+        }
     </section>
 
     <section id="contact" class="mt-5 p-4 border rounded">
