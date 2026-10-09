@@ -97,7 +97,31 @@ public class PortfolioController : Controller
                     tools = ["Flutter", "Node.js", "PostgreSQL", "Vercel"],
                     description = "EcoEcho is a gamefied platform dedicated to encouraging sustainable practices for its users.",
                     projectLink = "https://github.com/EcoEcho-DAA/EcoEcho"
-                }  
+                },
+                
+                new Project
+                {
+                    name = "PUP ASCII Website",
+                    tools = ["TypeScript", "React", "Node.js"],
+                    description = "Developed the frontend architecture for the official PUP-ASCII website using TypeScript.",
+                    projectLink = "https://github.com/jhonroyilao/pupascii-website"
+                },
+
+                new Project
+                {
+                    name = "Matrix Cofactor Calculator",
+                    tools = ["TypeScript", "Vercel"],
+                    description = "Led the development of a web-based linear algebra calculator using React and TypeScript to recursively compute determinants via cofactor expansion for up to 10×10 matrices.",
+                    projectLink = "https://github.com/roxaneesquejo/matrix-cofactor-calculator"
+                },
+
+                new Project
+                {
+                    name = "Split: Bill-Splitting Utility",
+                    tools = ["JavaScript", "React", "Vercel"],
+                    description = "Led the development of a web-based linear algebra calculator using React and TypeScript to recursively compute determinants via cofactor expansion for up to 10×10 matrices.",
+                    projectLink = "Developed a single-page expense-splitting web utility using React to automate group balance calculations, in isolated charges, and individual discount deductions."
+                } 
             },
         };
      
