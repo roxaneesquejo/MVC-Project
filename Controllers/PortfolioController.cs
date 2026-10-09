@@ -1,7 +1,4 @@
-using System.ComponentModel.Design;
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MVC_Project.Models;
 
 namespace MVC_Project.Controllers;
 
