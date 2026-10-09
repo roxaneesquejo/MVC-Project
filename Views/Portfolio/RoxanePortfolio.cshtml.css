@@ -3,6 +3,13 @@
     flex-direction: column;
 }
 
+#rox-grad-pic {
+    max-width: 384px;
+    max-height: 376px;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+}
 .personal-info-container {
     display: flex;
     flex-direction: row;
@@ -29,14 +36,34 @@
     gap: 10px;
 }
 
-#rox-grad-pic {
-    max-width: 384px;
-    max-height: 376px;
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
+.light-container {
+    background-color: pink;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dark-container {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.dark-container h1 {
+    color: pink;
 }
 
 .education-container {
-    background-color: pink;
+}
+
+.techstack-container {
+   
 }

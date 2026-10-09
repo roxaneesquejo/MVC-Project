@@ -19,15 +19,15 @@
         </div>
     </div>
 
-    <div class = "education-container">
-        <h2>Education</h2>
+    <div class = "education-container light-container">
+        <h1>Education</h1>
         <div class = "undergraduate-studies">
             <h5>@Model.university</h5>
             <p>@Model.yearLevel Year @Model.degree Student</p>
         </div>
     </div>
 
-    <div class = "techstack-container">
+    <div class = "techstack-container dark-container">
         <h1>Tech Stack</h1>
         @foreach (String tech in Model.techStack)
         {
@@ -35,11 +35,12 @@
         }
     </div>
 
-    <div class = "experience-container">
+    <div class = "experience-container light-container">
+        <h1>Experience</h1>
         @foreach (Experience experience in Model.Experiences)
         {   
             <div class = "experience-card">
-                <h3>@experience.company</h3>
+                <h5>@experience.company</h5>
                 <p>@experience.position</p>
                 <p>@experience.startDate</p>
                 <p>@experience.endDate</p>
@@ -48,12 +49,12 @@
         }
     </div>
 
-    <div class = "project-container">
-        <h2>Projects</h2>
+    <div class = "project-container dark-container">
+        <h1>Projects</h1>
         @foreach (Project project in Model.Projects)
         {
             <div class = "project-card">
-                <h3>@project.name</h3>
+                <h5>@project.name</h5>
                 
                 @foreach (String tool in project.tools)
                 {
