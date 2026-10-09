@@ -6,7 +6,6 @@ public record Experience(string Placement, string Name, string Desc);
 
 public class IzeahModel
 {
-    public string? Location { get; set; }
     public List<string>? Interests  { get; set; }
     public List<TechDomain>? TechStack { get; set; }
     public List<Project>? IzeahProjects { get; set; }
