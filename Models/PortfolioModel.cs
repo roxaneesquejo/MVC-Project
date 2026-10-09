@@ -49,8 +49,8 @@ public class PortfolioModel
 public class Experience {
         public string? company { get; set; }
         public string? position { get; set; }
-        public DateOnly startDate { get; set; }
-        public DateOnly endDate { get; set; }
+        public string? startDate { get; set; }
+        public string? endDate { get; set; }
         public string? description { get; set; }
     }
 
