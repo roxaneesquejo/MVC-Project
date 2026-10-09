@@ -27,6 +27,8 @@ public class PortfolioModel
     public string? middleName { get; set; }
     public string? lastName { get; set; }
     public string? photoLink { get; set; }
+    public string? location { get; set; }
+    public string? status { get; set; }
 
     // Contact Information
     public string? emailAddress { get; set; }

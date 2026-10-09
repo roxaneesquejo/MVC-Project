@@ -22,6 +22,8 @@ public class PortfolioController : Controller
             middleName = "Donor",
             lastName = "Esquejo",
             photoLink = "~/images/ESQUEJO_BG.png",
+            location = "Manila, Philippines",
+            status = "Balancing my workload",
 
             emailAddress = "roxanek.esquejo@gmail.com",
             githubUsername = "roxaneesquejo",
